@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block content %}
+    <title>Registro</title>
+  </head>
+  
+
+  </head>
+  <body>
+    
+    <div class="mx-auto">
+      <h1 class="text-center">CREAR CUENTA</h1>
+    </div>
+
+    
+    <form method="POST">
+      {% csrf_token %}
+        <div class="form-group mx-auto col-md-6">
+          <input type="id" class="form-control" id="inputid" placeholder="usuario_ID*"" name="usuario_id">
+        </div>
+        <div class="form-group mx-auto col-md-6">
+          <input type="nombre" class="form-control" id="inputnombre" placeholder="Nombre*"" name="nombre">
+        </div>
+        <div class="form-group mx-auto col-md-6">
+          <input type="apellido" class="form-control" id="inputapellido" placeholder="Apellido*" name="apellido">
+        </div>
+      <div class="form-group mx-auto col-md-6">
+        <input type="text" class="form-control" id="inputNacimiento" placeholder="Fecha de Nacimiento*" name="nacimiento">
+      </div>
+      <div class="form-group mx-auto col-md-6">
+        <input type="text" class="form-control" id="inputCorreo" placeholder="Correo Electronico*" name="email">
+      </div>
+      <div class="form-group mx-auto col-md-6">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Contraseña*" name="contrasena">
+      </div>
+      <div class="form-group mx-auto col-md-6">
+        <input type="text" class="form-control" id="inputPassword2" placeholder="Confirmar Contraseña*">
+      </div>
+        <div class="form-group mx-auto col-md-4">
+        <label for="inputProvincia">Provincia*</label>
+        <select id="inputProvincia" class="form-control" name="provincia">
+          <option selected>Elegir...</option>
+          <option>Buenos Aires</option>
+          <option>Catamarca</option>
+          <option>Chaco</option>
+          <option>Chubut</option>
+          <option>Cordoba</option>
+          <option>Corrientes</option>
+          <option>Entre Rios</option>
+          <option>Formosa</option>
+          <option>Jujuy</option>
+          <option>La Pampa</option>
+          <option>La Rioja</option>
+          <option>Mendoza</option>
+          <option>Misiones</option>
+          <option>Neuquen</option>
+          <option>Rio Negro</option>
+          <option>Salta</option>
+          <option>San Juan</option>
+          <option>San Luis</option>
+          <option>Santa Cruz</option>
+          <option>Santa Fe</option>
+          <option>Santiago del Estero</option>
+          <option>Tierra del Fuego</option>
+          <option>Tucuman</option>
+        </select>
+      </div>
+      <div class="form-group mx-auto col-md-4">
+        <label for="inputCiudad">Ciudad*</label>
+        <input type="text" class="form-control" id="inputCiudad" placeholder="Resistencia" name="ciudad">
+      </div>
+      <div class="form-group mx-auto col-md-2">
+          <label for="inputCP">Codigo Postal*</label>
+          <input type="text" class="form-control" id="inputCP" name="codigopostal">
+      </div>
+      <div class="form-group text-center">
+
+        <div class="my-3">
+          <span>Los campos con (*) son obligatorios.</span>
+        </div>
+        <div class="text-center my-3">
+          <span class="">Al hacer clic en registrarse, acepto que he leido y acepto los Terminos y condiciones y la Politica de privacidad.</span>
+        </div>
+      <div class="text-center my-3">
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </div>
+    </form>
+    {% endblock %}
+  </body>
+  
+</html>

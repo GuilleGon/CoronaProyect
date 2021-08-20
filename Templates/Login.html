@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block content %}
+    <title>INICIAR SESIÓN</title>
+  </head>
+  <body>
+        
+    
+    <div class="card border-primary my-2" style=" width: 40rem; margin: auto">
+    <div class="mx-auto">
+      <h1 class="text-center">INICIAR SESION</h1>
+    </div>
+    <hr class="mx-3">
+
+    
+    <form method="POST">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <div class="form-group">
+        <div class="form-group mx-auto col-md-6">
+          <input type="nombre" class="form-control" id="inputapellido" placeholder="Correo Electronico" name="email">
+        </div>
+      </div>
+      <div class="form-group mx-auto col-md-6">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Contraseña" name="contrasena">
+      </div>
+      <div class="form-group text-center">
+        <div class="text-center my-3">
+          <span class=""><a class="nav-link active" href="" target="_blank">Olvide mi contraseña</a>
+            <a class="nav-link active" href="/Registrarse" target="_blank">Registrarme</a> </span>
+        </div>
+      <div class="text-center my-1">
+        <button type="submit" class="btn btn-primary">INGRESAR</button>
+      </div>
+    </form>
+  </div>
+   {% endblock %}
+  </body>
+</html>

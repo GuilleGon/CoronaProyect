@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+<!doctype html>
+<html lang="es">
+  <head>
+  	{% block content %}
+    <title>CuarentTime - Inicio</title>
+  
+  </head>
+  
+  <body>
+    <div class="mx-auto mt-5 mb-5" style="width: 500px;">
+    	<h3 class="text-center my-2">Ejercicios</h3>
+  		<div class="input-group">
+	  		<input type="text" class="form-control" placeholder="Busca algo para hacer..." aria-label="Text input with segmented dropdown button">
+		  		<div class="input-group-append">
+		    		<button type="button" class="btn btn-outline-primary">Seleccionar</button>
+		   			<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      			<span class="sr-only">Toggle Dropdown</span>
+		    		</button>
+		    	<div class="dropdown-menu">
+			    	<a class="dropdown-item" href="/">Todos</a>
+			    	<div class="dropdown-divider"></div>
+			      	<a class="dropdown-item" href="/Arreglando">Niños</a>
+			      	<a class="dropdown-item" href="/Adolescente">Adolescentes</a>
+			      	<a class="dropdown-item" href="/Arreglando">Ancianos</a>
+		    	</div>
+	 			</div>
+		</div>
+
+	</div>
+
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="">
+    				<img src="/static/images/cardio.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">CARDIO</h5>
+        			<p class="card-text">Rutinas de ejercicios cardiovascular.</p>
+      			 	<a href="https://www.youtube.com/watch?v=c_IdhmpFtqM&ab_channel=FaustoMurillo" target="_blank">Hombres   </a><a href="https://www.youtube.com/watch?v=iQ3g-gqKe_A&ab_channel=gymvirtual
+" target="_blank">Mujeres</a>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="">
+    				<img src="/static/images/abdominales2.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">ABDOMINALES</h5>
+        			<p class="card-text">Rutina de ejercicios centrados en el tronco.</p>
+      			 	<a href="https://www.youtube.com/watch?v=DBuI_uNzknQ&list=PLF3hdeOYvpxwzrqqEngmgW2xeFLe8p04C&index=1&t=262s&ab_channel=BUFFAcademy" target="_blank">Hombres   </a><a href="https://www.youtube.com/watch?v=UyDVsZUZAvM&ab_channel=BUFFAcademy" target="_blank">Mujeres</a>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="">
+    				<img src="/static/images/piernas.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">PIERNAS</h5>
+        			<p class="card-text">Rutina de ejercicios centrados en la parte baja del cuerpo.</p>
+      			 	<a href="https://www.youtube.com/watch?v=xE5kLBSkezI&ab_channel=GENIAL" target="_blank">Ejercicios</a>
+			    </div>
+    		</div>
+
+    		<div class="card my-auto mx-auto">
+    			<a href="">
+    				<img src="/static/images/aerobics.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">AEROBICS</h5>
+        			<p class="card-text">Rutina de ejercicios cardiovascular</p>
+      			 	<a href="https://www.youtube.com/watch?v=13f7QuD7E1U&ab_channel=CardioAbdomen" target="_blank">Ejercicios</a>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="">
+    				<img src="/static/images/estiramientos.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">ESTIRAMIENTOS</h5>
+        			<p class="card-text">Rutina de ejercicios para mejorar la movilidad.</p>
+      			 	<a href="https://www.youtube.com/watch?v=YQQfhILVR7c&ab_channel=gymvirtual" target="_blank">Mujeres   </a><a href="https://www.youtube.com/watch?v=Y3cZsfVpN_U&ab_channel=HipernovaTraining" target="_blank">Hombres</a>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="">
+    				<img src="/static/images/flexiones.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">BRAZOS</h5>
+        			<p class="card-text">Rutina de ejercicios centrada en la parte superior del cuerpo.</p>
+      			 	<a href="https://www.youtube.com/watch?v=nfAYRzL0DXE&ab_channel=Imparable.Tv" target="_blank">Hombres   </a><a href="https://www.youtube.com/watch?v=sDoQkHx13po&ab_channel=gymvirtual" target="_blank">Mujeres</a>
+			    </div>
+    		</div>
+
+		</div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

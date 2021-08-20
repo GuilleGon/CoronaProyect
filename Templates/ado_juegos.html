@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	{% block content %}
+    <title>CuarentTime - Inicio</title>
+
+
+  </head>
+  
+  <body>
+    
+    <div class="mx-auto mt-5 mb-5" style="width: 500px;">
+    	<h3 class="text-center my-2">Juegos</h3>
+  		<div class="input-group">
+	  		<input type="text" class="form-control" placeholder="Busca algo para hacer..." aria-label="Text input with segmented dropdown button">
+		  		<div class="input-group-append">
+		    		<button type="button" class="btn btn-outline-primary">Seleccionar</button>
+		   			<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      			<span class="sr-only">Toggle Dropdown</span>
+		    		</button>
+		    	<div class="dropdown-menu">
+			    	<a class="dropdown-item" href="/">Todos</a>
+			    	<div class="dropdown-divider"></div>
+			      	<a class="dropdown-item" href="/Arreglando">Niños</a>
+			      	<a class="dropdown-item" href="/Adolescente">Adolescentes</a>
+			      	<a class="dropdown-item" href="/Arreglando">Ancianos</a>
+		    	</div>
+	 			</div>
+		</div>
+
+	</div>
+
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="https://www.playstation.com/es-es/games/the-last-of-us-part-ii-ps4/" target="_blank" >
+    				<img src="/static/images/SP - The Last Of Us.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">THE LAST OF US</h5>
+        			<p class="card-text">Ayuda a Joel y Ellie a sobrevivir a una pandemia que transforma a los seres humanos en caníbales.</p>
+      			 	<p class="card-text"><small class="text-muted">#Singleplayer #Aventura #Terror #Accion</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank">
+    				<img src="/static/images/MLO - Among Us.webp" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">AMONG US</h5>
+        			<p class="card-text">Prepara tu nave para el viaje, pero ten cuidado, hay un impostor en la tripulación empeñado en matarlos... A TODOS!</p>
+      			 	<p class="card-text"><small class="text-muted">#Multiplayer #Online #LAN</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://store.steampowered.com/app/219150/Hotline_Miami/"  target="_blank">
+    				<img src="/static/images/SP - Hotline Miami.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">HOTLINE MIAMI</h5>
+        			<p class="card-text">¿Qué pasaría si un días recibes un paquete en tu puerta con una máscara de gallo e instrucciones de robar y matar a mafiosos a petición de unos misteriosos mensajes de voz?</p>
+      			 	<p class="card-text"><small class="text-muted">#Singleplayer #Pixel #Accion</small></p>
+			    </div>
+    		</div>
+
+    		<div class="card my-auto mx-auto">
+    			<a href="https://store.steampowered.com/app/550/Left_4_Dead_2/"  target="_blank">
+    				<img src="/static/images/MLO - Left 4 dead 2.webp" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">LEFT 4 DEAD 2</h5>
+        			<p class="card-text">Tú y tres amigos deben unirse con el único objetivo de sobrevivir el apocalipsis zombi.</p>
+      			 	<p class="card-text"><small class="text-muted">#Multiplayer #Singleplayer #Accion #Terror #FPS</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://na.leagueoflegends.com/es-es/" target="_blank">
+    				<img src="/static/images/MO - League Of Legends.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">LEAGUE OF LEGENDS</h5>
+        			<p class="card-text">Un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro. Elige de entre más de 140 campeones para realizar jugadas épicas, asegurar asesinatos y destruir torretas mientras avanzas hacia la victoria.</p>
+      			 	<p class="card-text"><small class="text-muted">#Multijugador #Online</small></p>
+			    </div>
+    		</div>
+			<div class="card my-auto mx-auto">
+    			<a href="https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/" target="_blank">
+    				<img src="/static/images/SP - Horizon Zero Dawn.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">HORIZON ZERO DAWN</h5>
+        			<p class="card-text">Acompaña a Aloy, una marginada, a descubrir un mundo salvaje y primitivo en donde la naturaleza ha cedido su lugar a las máquinas.</p>
+      			 	<p class="card-text"><small class="text-muted">#Singleplayer #Aventura #Accion #Mundoabierto</small></p>
+			    </div>
+    		</div>
+
+		</div>
+    </div>
+    {% endblock %}
+  </body> 
+</html>

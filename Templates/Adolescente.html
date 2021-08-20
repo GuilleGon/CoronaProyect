@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	{% block content %}
+    <title>CuarentTime - Inicio</title>
+  </head>
+  
+  <body>
+    <div class="mx-auto mt-5 mb-5" style="width: 500px;">
+    	<h3 class="text-center my-2">¡Hola!</h3>
+  		<div class="input-group">
+	  		<input type="text" class="form-control" placeholder="Busca algo para hacer..." aria-label="Text input with segmented dropdown button">
+		  		<div class="input-group-append">
+		    		<button type="button" class="btn btn-outline-primary">Seleccionar</button>
+		   			<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      			<span class="sr-only">Toggle Dropdown</span>
+		    		</button>
+		    	<div class="dropdown-menu">
+			    	<a class="dropdown-item" href="/">Todos</a>
+			    	<div class="dropdown-divider"></div>
+			      	<a class="dropdown-item" href="/Arreglando">Niños</a>
+			      	<a class="dropdown-item" href="/Adolescente">Adolescentes</a>
+			      	<a class="dropdown-item" href="/Arreglando">Ancianos</a>
+		    	</div>
+	 			</div>
+		</div>
+
+	</div>
+
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="/Adolescente/juegos">
+    				<img src="/static/images/hl.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">JUEGOS</h5>
+        			<p class="card-text">Vuelve a los clásicos, descubre los juegos en tendencia o reúnete con amigos.</p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="/Adolescente/gym">
+    				<img src="/static/images/cardio.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">GYM EN CASA</h5>
+        			<p class="card-text">Ejercitate en casa.</p>
+      			</div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="/Adolescente/musica">
+    				<img src="/static/images/armin1.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">MÚSICA</h5>
+        			<p class="card-text">Descubre música nueva.</p>
+      			 	
+			    </div>
+    		</div>
+    
+		</div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

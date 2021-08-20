@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+<!doctype html>
+<html lang="es">
+  <head>
+  	{% block content %}
+      <title>CuarentTime - Inicio</title>
+  	
+  </head>
+  
+  <body>
+
+
+    <div class="mx-auto mt-5 mb-5" style="width: 500px;">
+    	<h3 class="text-center my-2">Musica</span>!</h3>
+  		<div class="input-group">
+	  		<input type="text" class="form-control" placeholder="Busca algo para hacer..." aria-label="Text input with segmented dropdown button">
+		  		<div class="input-group-append">
+		    		<button type="button" class="btn btn-outline-primary">Seleccionar</button>
+		   			<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      			<span class="sr-only">Toggle Dropdown</span>
+		    		</button>
+		    	<div class="dropdown-menu">
+			    	<a class="dropdown-item" href="/">Todos</a>
+			    	<div class="dropdown-divider"></div>
+			      	<a class="dropdown-item" href="/Arreglando">Niños</a>
+			      	<a class="dropdown-item" href="/Adolescente">Adolescentes</a>
+			      	<a class="dropdown-item" href="/Arreglando">Ancianos</a>
+		    	</div>
+	 			</div>
+		</div>
+
+	</div>
+
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="https://www.youtube.com/watch?v=ZVRgd6YQoRU" target="_blank">
+    				<img src="/static/images/ultra.png" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">ARMIN VAN BUUREN - UMF 2019</h5>
+        			<p class="card-text">Disfruta de la presentación de Armin Van Buuren, 5 veces elegido mejor DJ del mundo, con la participación especial de David Lee Roth (Van Halen). </p>
+      			 	<p class="card-text"><small class="text-muted">#Vivo #Electronica #Trance #Musica</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://www.youtube.com/watch?v=-ACG_gupkDw&list=PL0FBF4CC5060453D8" target="_blank">
+    				<img src="/static/images/cerati.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">GUSTAVO CERATI</h5>
+        			<p class="card-text">Escucha una playlist de uno mejores y más influyentes artista del rock nacional.</p>
+      			 	<p class="card-text"><small class="text-muted">#Rock #Musica #Playlist #GustavoCerati</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://www.youtube.com/watch?v=xDPTHakqQDs" target="_blank">
+    				<img src="/static/images/avicii.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">AVICII - TIM</h5>
+        			<p class="card-text">Escucha el último álbum post mortem de uno de los artistas más influyentes en la escena EDM.</p>
+      			 	<p class="card-text"><small class="text-muted">#Album #Avicii #Tim #EDM #Electronica</small></p>
+			    </div>
+    		</div>
+
+    		<div class="card my-auto mx-auto">
+    			<a href="https://www.youtube.com/watch?v=K9fISloOznc&list=PLLFaXG8eSf2_nJ2QuMEsJOd3HimspKPV6" target="_blank">
+    				<img src="/static/images/true.png" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">AVICII - TRUE</h5>
+        			<p class="card-text">Álbum debut del dj sueco.</p>
+      			 	<p class="card-text"><small class="text-muted">#Album #Playlist #Avicii #True #EDM</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://www.youtube.com/playlist?list=PL0cWlOyqP6_PKyS76fDsafkj_ho4KLmEA" target="_blank">
+    				<img src="/static/images/asot.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">A STATE OF TRANCE - RADIO</h5>
+        			<p class="card-text">Descubre nueva música en el programa semanal A State of Trance, conducido y mezclado por Armin van Buuren y Ruben de Ronde.</p>
+      			 	<p class="card-text"><small class="text-muted">#Radio #Electornica #Trance #ProgressiveHouse #Vivo</small></p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="https://www.youtube.com/watch?v=SlPhMPnQ58k&list=PL4o29bINVT4EG_y-k5jGoOu3-Am8Nvi10" target="_blank">
+    				<img src="/static/images/pop.webp" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">POP</h5>
+        			<p class="card-text">Escucha las canciones en tendencia de la Billboard Charts.</p>
+      			 	<p class="card-text"><small class="text-muted">#Playlist #Pop #Trending</small></p>
+			    </div>
+    		</div>
+
+		</div>
+    </div>
+    {% endblock %}
+  </body>  
+</html>

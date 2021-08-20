@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	{% block content %}
+  	<link rel="stylesheet" type="text/css" href="/static/css/estilos.css">
+    <title>Inicio</title>
+
+  </head>
+
+  
+  <body>
+
+    <div class="mx-auto mt-5 mb-5" style="width: 500px;">
+  		<div class="input-group">
+	  		<input type="text" class="form-control" placeholder="Busca algo para hacer..." aria-label="Text input with segmented dropdown button">
+		  		<div class="input-group-append">
+		    		<button type="button" class="btn btn-outline-primary">Seleccionar</button>
+		   			<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      			<span class="sr-only">Toggle Dropdown</span>
+		    		</button>
+		    	<div class="dropdown-menu">
+			    	<a class="dropdown-item" href="/">Todos</a>
+			    	<div class="dropdown-divider"></div>
+			      	<a class="dropdown-item" href="/Arreglando">Niños</a>
+			      	<a class="dropdown-item" href="/Adolescente">Adolescentes</a>
+			      	<a class="dropdown-item" href="/Arreglando">Ancianos</a>
+		    	</div>
+	 			</div>
+		</div>
+
+	</div>
+
+	<!--/static/images/image1.jpg-->
+
+	<!--PRIMERA FILA------------------------------------------------------------------------------------>
+
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="/Arreglando">
+    				<img src="/static/images/baile.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">Baile</h5>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="/Arreglando" >
+    				<img src="/static/images/true.png" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">Algo</h5>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="/Adolescente/musica">
+    				<img src="/static/images/asot.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">Musica</h5>
+			    </div>
+    		</div>
+    		
+		</div>
+    </div>
+    <br>
+    <!--SEGUNDA FILA------------------------------------------------------------------------------------------->
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="/Adolescente/gym">
+    				<img src="/static/images/flexiones.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">Ejercicios</h5>
+			    </div>
+    		</div>
+    		
+			<div class="card my-auto mx-auto">
+    			<a href="/Adolescente/juegos">
+    				<img src="/static/images/zelda.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">Juegos</h5>
+			    </div>
+    		</div>
+    		
+			<div class="card my-auto mx-auto">
+    			<a href="/Arreglando">
+    				<img src="/static/images/pelis.png" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">Peliculas</h5>
+			    </div>
+    		</div>
+    		
+		</div>
+    </div>
+    <br>
+
+
+    
+    {% endblock %}
+  </body>
+
+  
+</html>

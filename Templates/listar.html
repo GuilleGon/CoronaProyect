@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% block content %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lista</title>
+</head>
+<body>
+	{% for usuario in usuarios %}
+	<h5>{{usuario.nombre}}  ---{{usuario.email}}</h5>
+	<a href="{% url 'eliminar' usuario.usuario_id %}">Eliminar</a>
+	<a href="{% url 'modificar' usuario.usuario_id %}">Modificar</a>
+	<a href="{% url 'detalle' usuario.usuario_id %}">Detalle</a>
+
+{% endfor %}
+	{% endblock %}
+</body>
+</html>
+
+<br>
+

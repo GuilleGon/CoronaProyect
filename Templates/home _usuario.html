@@ -1,0 +1,106 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	{% block content %}
+
+    <title>CuarentTime - Inicio</title>
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+		<a class="navbar-brand font-weight-bold text-white" href="#">CuarentTime</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+		    <ul class="navbar-nav ml-auto">
+		    	<li class="nav-item active">
+		        	<a class="nav-link text-black btn btn-outline-light mx-2" href="#">Inicio <span class="sr-only">(current)</span></a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link text-black btn btn-outline-light mx-2" href="#">Autotest</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link text-black btn btn-outline-light mx-2" href="#">Cuidados</a>
+		      	</li>
+		      	<!-- Example single danger button -->
+				<div class="btn-group dropleft">
+				  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Usuario
+				  </button>
+				  <div class="dropdown-menu">
+				    <a class="dropdown-item" href="#">Perfil</a>
+				    <a class="dropdown-item" href="#">Preferencias</a>
+				    <div class="dropdown-divider"></div>
+				    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+				  </div>
+				</div>
+		    </ul>
+		</div>
+	</nav>
+
+  </head>
+  
+  <body>
+
+  	<form method="POST">
+    <div class="mx-auto mt-5 mb-5" style="width: 500px;">
+    	<h3 class="text-center my-2">¡Hola, <span class="text-primary" name="nombre">{{dato.nombre}}</span>!</h3>
+    	</form>
+  		<div class="input-group">
+	  		<input type="text" class="form-control" placeholder="Busca algo para hacer..." aria-label="Text input with segmented dropdown button">
+		  		<div class="input-group-append">
+		    		<button type="button" class="btn btn-outline-primary">Seleccionar</button>
+		   			<button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      			<span class="sr-only">Toggle Dropdown</span>
+		    		</button>
+		    	<div class="dropdown-menu">
+			    	<a class="dropdown-item" href="#">Todos</a>
+			    	<div class="dropdown-divider"></div>
+			      	<a class="dropdown-item" href="#">Niños</a>
+			      	<a class="dropdown-item" href="#">Adolescentes</a>
+			      	<a class="dropdown-item" href="#">Ancianos</a>
+		    	</div>
+	 			</div>
+		</div>
+
+	</div>
+
+    <div class="container">
+
+    	<div class="card-columns">
+
+    		<div class="card my-auto mx-auto">
+    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    				<img src="images\hl.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">JUEGOS</h5>
+        			<p class="card-text">Vuelve a los clásicos, descubre los juegos en tendencia o reúnete con amigos.</p>
+			    </div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    				<img src="images\cardio.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">GYM EN CASA</h5>
+        			<p class="card-text">Ejercitate en casa.</p>
+      			</div>
+    		</div>
+
+			<div class="card my-auto mx-auto">
+    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    				<img src="images\armin1.jpg" alt="" class="card-img-top">	
+    			</a>
+			    <div class="card-body">
+			    	<h5 class="card-title">MÚSICA</h5>
+        			<p class="card-text">Descubre música nueva.</p>
+      			 	
+			    </div>
+    		</div>
+    
+		</div>
+    </div>
+    {% endblock %}
+  </body>  
+</html>

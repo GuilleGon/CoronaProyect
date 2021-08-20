@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+<!doctype html>
+<html lang="es">
+  <head>
+    {% block content %}
+    <title>Auto Test</title>
+  </head>
+  
+  </head>
+  <body>
+    
+    <h1 class="text-center">Autotest</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <form>
+    <div class="card border-primary my-3" style=" width: 50rem; margin: auto">
+        <div class="card-header text-primary text-center">
+          <h5>¿Tiene pérdida del olfato o disminución del sentido del gusto, de reciente aparición?</h5>
+        </div>
+        <div class="card-body text-center" >
+          <blockquote class="blockquote">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label mx-2" for="inlineRadio1">Sí</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label mx-2" for="inlineRadio2">No</label>
+            </div>
+          </blockquote>
+        </div>
+    </div>
+  </form>
+  <form>
+    <div class="card border-primary my-3" style=" width: 50rem; margin: auto">
+        <div class="card-header text-primary text-center">
+          <h5>¿Tiene dos o más de estos síntomas?</h5>
+        </div>
+        <div class="card-body text-center" >
+           <blockquote class="blockquote ml-4 text-center">
+              <div class="card">
+                <div class="card-body">
+                  Temperatura de 37.5°.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Tos.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Dolor de garganta.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Agitación o falta de aire.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Pérdida de olfato.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Disminución del gusto.
+                </div>
+              </div>
+          </blockquote>
+          <hr>
+          <blockquote class="blockquote">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label mx-2" for="inlineRadio1">Sí</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label mx-2" for="inlineRadio2">No</label>
+            </div>
+          </blockquote>
+        </div>
+    </div>
+    </form>
+
+    <form>
+    <div class="card border-primary my-3" style=" width: 50rem; margin: auto">
+        <div class="card-header text-primary text-center">
+          <h5>¿Estuvo en contacto estrecho con alguna persona que tenga confirmado diagnóstico de COVID-19?</h5>
+        </div>
+        <div class="card-body text-center">
+          <blockquote class="blockquote">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label mx-2" for="inlineRadio1">Sí</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label mx-2" for="inlineRadio2">No</label>
+            </div>
+          </blockquote>
+        </div>
+    </div>
+    </form>
+
+    <form>
+    <div class="card border-primary my-3" style=" width: 50rem; margin: auto">
+        <div class="card-header text-primary text-center">
+          <h5>¿Ha vuelto de viaje (en los últimos 14 días) o tiene residencia en zonas de transmisión local en Argentina?</h5>
+        </div>
+        <div class="card-body text-center"> 
+          <blockquote class="blockquote">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label mx-2" for="inlineRadio1">Sí</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label mx-2" for="inlineRadio2">No</label>
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group mx-auto col-md-4">
+            <select id="inputProvincia" class="form-control">
+              <option selected>Elegir...</option>
+              <option>No corresponde</option>
+              <option>Buenos Aires</option>
+              <option>Catamarca</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Cordoba</option>
+              <option>Corrientes</option>
+              <option>Entre Rios</option>
+              <option>Formosa</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquen</option>
+              <option>Rio Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Santiago del Estero</option>
+              <option>Tierra del Fuego</option>
+              <option>Tucuman</option>
+            </select>
+          </div>
+        </div>
+     </div> 
+     </form>
+
+     <form>
+    <div class="card border-primary my-3" style=" width: 50rem; margin: auto">
+        <div class="card-header text-primary text-center">
+          <h5>¿Ha viajado al exterior en los últimos 14 días?</h5>
+        </div>
+        <div class="card-body text-center">
+          <blockquote class="blockquote">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label mx-2" for="inlineRadio1">Sí</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label mx-2" for="inlineRadio2">No</label>
+            </div>
+          </blockquote>
+        </div>
+        <div class="mx-auto mb-3">
+          <input class="form-control" type="text" placeholder="Escriba aquí el país..." >
+        </div>
+    </div>  
+
+        <div class="text-center my-3">
+            <button type="submit" class="btn btn-primary my-auto"><h5>Chequear</h5></button>
+        </div>
+    </form>
+
+    {% endblock %}
+  </body>
+</html>
+
